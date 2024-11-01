@@ -6,6 +6,7 @@ import RiCodeBoxLine from "~icons/ri/code-box-line";
 import RiBookReadLine from "~icons/ri/book-read-line";
 import RiComputerLine from "~icons/ri/computer-line";
 import RiArrowRightSLine from "~icons/ri/arrow-right-s-line";
+import { Button } from '../components/ui/button'
 
 onMounted(() => {
   confetti({
@@ -20,12 +21,12 @@ onMounted(() => {
   <section id="plugin-starter">
     <div class="wrapper">
       <span class="title"> 你已经成功运行起了插件！ </span>
-      <span class="message">你可以点击下方文档继续下一步</span>
+      <span class="message">你可以点击下方文档继续下一步<Button>Click me</Button></span>
       <div class="docs">
         <a
-          href="https://docs.halo.run/developer-guide/plugin/publish"
-          class="docs__box"
-          target="_blank"
+            href="https://docs.halo.run/developer-guide/plugin/publish"
+            class="docs__box"
+            target="_blank"
         >
           <h2 class="docs__box-title"><RiShareCircleLine />发布一个插件</h2>
           <span class="docs__box-message">
@@ -36,9 +37,9 @@ onMounted(() => {
           </span>
         </a>
         <a
-          href="https://docs.halo.run/category/%E5%9F%BA%E7%A1%80"
-          class="docs__box"
-          target="_blank"
+            href="https://docs.halo.run/category/%E5%9F%BA%E7%A1%80"
+            class="docs__box"
+            target="_blank"
         >
           <h2 class="docs__box-title"><RiComputerLine />基础概览</h2>
           <span class="docs__box-message">
@@ -49,9 +50,9 @@ onMounted(() => {
           </span>
         </a>
         <a
-          href="https://docs.halo.run/developer-guide/plugin/examples/todolist"
-          class="docs__box group"
-          target="_blank"
+            href="https://docs.halo.run/developer-guide/plugin/examples/todolist"
+            class="docs__box group"
+            target="_blank"
         >
           <h2 class="docs__box-title"><RiBookReadLine />示例插件</h2>
           <span class="docs__box-message">帮助你从 0 到 1 完成一个插件。</span>
@@ -60,9 +61,9 @@ onMounted(() => {
           </span>
         </a>
         <a
-          href="https://docs.halo.run/category/api-%E5%8F%82%E8%80%83"
-          class="docs__box"
-          target="_blank"
+            href="https://docs.halo.run/category/api-%E5%8F%82%E8%80%83"
+            class="docs__box"
+            target="_blank"
         >
           <h2 class="docs__box-title"><RiCodeBoxLine />API 参考</h2>
           <span class="docs__box-message">插件中的 API 列表。</span>
@@ -116,13 +117,13 @@ onMounted(() => {
       transition-duration: 300ms;
       cursor: pointer;
       filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1))
-        drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+      drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 
       &:hover {
         box-shadow:
-          0 0 0 0px #fff,
-          0 0 0 1px rgb(59 130 246 / 0.5),
-          0 0 #0000;
+            0 0 0 0px #fff,
+            0 0 0 1px rgb(59 130 246 / 0.5),
+            0 0 #0000;
       }
 
       .docs__box-title {
@@ -157,7 +158,7 @@ onMounted(() => {
         .docs__box-arrow {
           color: #9ca3af;
           transform: translate(00.375rem, 0) rotate(0) skewX(0) skewY(0)
-            scaleX(1) scaleY(1);
+          scaleX(1) scaleY(1);
         }
       }
     }
